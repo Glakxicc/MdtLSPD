@@ -1,5 +1,2 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const btn1 = document.querySelector(".item1");
-
-  btn1.addEventListener("click", () => btn1.remove());
-});
+const btn1 = document.querySelector(".item1");
+btn1.addEventListener("click", () => btn1.remove());
