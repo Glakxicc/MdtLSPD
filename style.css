@@ -10,7 +10,6 @@ body {
     opacity: 0;
   }
   to {
-    transform: translate(0%, 470px);
     opacity: 1;
   }
 }
