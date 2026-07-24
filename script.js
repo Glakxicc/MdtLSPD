@@ -1,26 +1,15 @@
 const btn1 = document.querySelector(".item1");
 btn1.addEventListener(
   "click",
-  () => (document.body.innerHTML = generatePage("test", "Pas Content")),
+  () => (document.querySelector(".mdt-container").innerHTML = generatePage()),
 );
 
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-// 1. Fonction pour générer une page dynamiquement
-function generatePage(title, content) {
+function generatePage() {
   return `
-<!doctype html>
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MDT - LSPD - Accueil</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
-  </head>
-  <body>
     <div class="mdt-container">
       <div class="mdt-header">
         <p class="header-text">Matricule - Prenom Nom - Grade - Date</p>
@@ -89,6 +78,5 @@ function generatePage(title, content) {
     </div>
   </body>
 </html>
-
-  `;
+`;
 }

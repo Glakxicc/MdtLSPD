@@ -3,6 +3,16 @@ body {
   font-weight: bold;
   background: transparent;
   color: #fff;
+  animation: test 2s;
+}
+
+@keyframes test {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 a {
